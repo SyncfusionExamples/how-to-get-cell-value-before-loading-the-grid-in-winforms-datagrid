@@ -1,8 +1,8 @@
-# How to get cell value before loading the grid in WinForms DataGrid (SfDataGrid)?
+# How to get cell value before loading the Grid in WinForms DataGrid?
 
 ## About the sample
 
-This example illustrates how to get cell value before loading the grid in WinForms DataGrid.
+This example illustrates how to get cell value before loading the Grid in DataGrid.
 
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows you to retrieve the cell values before the DataGrid is loaded by using SfDataGrid.View.Records collection. 
 
@@ -18,12 +18,12 @@ public Form1()
 
     var record = this.sfDataGrid1.View.Records[this.sfDataGrid1.TableControl.ResolveToRecordIndex(this.sfDataGrid1.CurrentCell.RowIndex)];
     var currentCellValue = this.sfDataGrid1.View.GetPropertyAccessProvider().GetValue((record as RecordEntry).Data, "OrderID");
-
     MessageBox.Show("CurrentCell value = " + currentCellValue.ToString());
 }
 
-
 ```
+
+Take a moment to peruse the [WinForms DataGrid - Selection](https://help.syncfusion.com/windowsforms/datagrid/selection) documentation, where you can find about selection, with code examples.
 
 ## Requirements to run the demo 
 
